@@ -11,8 +11,9 @@ if (page) {
         element.classList.remove("action");
       });
       event.target.classList.add("action");
-      let myScore = event.target.value;
-      span.innerHTML = `You selected out of ${myScore}`;
+      let myScore = event.target.textContent;
+      console.log(myScore);
+      span.innerHTML = `You selected ${myScore} out of 5`;
     });
   });
 
