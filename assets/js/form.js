@@ -1,5 +1,4 @@
 const spanSelected = document.querySelector(".span-selected");
-// let score;
 function updateScore(score) {
   // Remove a classe 'selected' de todas as pontuações
   const scores = document.querySelectorAll(".score");
@@ -14,14 +13,11 @@ function updateScore(score) {
   selectedScore.classList.add("action");
 
   spanSelected.textContent = score;
-  console.log(score);
-  console.log(spanSelected);
 }
 
 function myScore(event) {
   const container1 = document.querySelector(".request");
   const container2 = document.querySelector(".thank");
-  console.log(spanSelected);
   event.preventDefault();
 
   // Esconde a classe "container1" e exibe a classe "container2"
