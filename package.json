@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "compile-sass": "sass assets/sass/main.scss assets/css/main.css"
+  },
   "dependencies": {
     "sass": "^1.60.0"
   }
